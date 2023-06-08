@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Форма бронювання</title>
-  <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-  <h2>Форма бронювання</h2>
-  <p>Дякуємо, що завітали до нас! Будь ласка, оберіть дату та час для бронювання:</p>
-  <div id="timeslots">
-    <!-- Відображення вільних та заброньованих слотів -->
-  </div>
+    <h1>Форма замовлення</h1>
+    <table id="booking-table">
+    </table>
 
-  <script src="main.js"></script>
+    <div id="dialog-form" style="display: none;">
+        <h2>Форма бронювання</h2>
+        <p id="booking-info"></p>
+        <input type="text" id="name" placeholder="Ім'я">
+        <input type="text" id="phone" placeholder="Телефон">
+        <p>Якщо все вірно, введіть свій телефон та ім'я.</p>
+        <button id="confirm-booking">Підтвердити бронювання</button>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
