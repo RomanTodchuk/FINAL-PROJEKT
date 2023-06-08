@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 450px;
+}
+
+.date {
+  flex: 1;
+  text-align: left;
+}
+
+.day {
+  flex: 1;
+  text-align: center;
+  background-color: rgb(224, 243, 53);
+}
+
+.timeslots {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.timeslot {
+  width: 40px;
+  height: 15px;
+  margin: 5px;
+  background-color: lightgreen;
+  cursor: pointer;
+}
+
+.timeslot.booked {
+  background-color: red;
+  cursor: not-allowed;
+}
+
+.timeslot.selected {
+  background-color: blue;
+}
