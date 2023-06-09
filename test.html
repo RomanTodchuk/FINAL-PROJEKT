@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Діалогове вікно</title>
+  <style>
+    /* Стилі для діалогового вікна */
+    .dialog-container {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .dialog-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      max-width: 500px;
+    }
+    
+    .dialog-close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
+    /* Стилі для кнопки, що викликає діалогове вікно */
+    .open-dialog-btn {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button class="open-dialog-btn">Відкрити діалогове вікно</button>
+
+  <div class="dialog-container">
+    <div class="dialog-content">
+      <span class="dialog-close">&times;</span>
+      <h2>Діалогове вікно</h2>
+      <p>Це приклад діалогового вікна.</p>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector('.open-dialog-btn').addEventListener('click', function() {
+      document.querySelector('.dialog-container').style.display = 'block';
+    });
+
+    document.querySelector('.dialog-close').addEventListener('click', function() {
+      document.querySelector('.dialog-container').style.display = 'none';
+    });
+  </script>
+</body>
+</html>
