@@ -65,3 +65,18 @@
   </script>
 </body>
 </html>
+
+
+
+
+
+
+
+function selectTimeslot(event) {
+  const selectedSlot = document.querySelector('.timeslot.selected');
+  if (selectedSlot) {
+    selectedSlot.classList.remove('selected');
+  }
+  event.target.classList.add('selected');
+  openDialog();
+}
