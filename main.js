@@ -66,12 +66,11 @@ function selectTimeslot(event) {
 
 
 
-<script>
-    document.querySelector('.timeslot.selected').addEventListener('click', function() {
-      document.querySelector('.dialog-container').style.display = 'block';
+/* подія , що викликає діалогове вікно */
+document.querySelector('.timeslot').addEventListener('click', function() {
+    document.querySelector('.dialog-container').style.display = 'block';
     });
 
-    document.querySelector('.dialog-close').addEventListener('click', function() {
-      document.querySelector('.dialog-container').style.display = 'none';
+document.querySelector('.dialog-close').addEventListener('click', function() {
+    document.querySelector('.dialog-container').style.display = 'none';
     });
-  </script>
