@@ -1,22 +1,23 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
+  <title>Форма бронювання</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>Форма замовлення</h1>
-    <table id="booking-table">
-    </table>
+  <h2>Форма бронювання</h2>
+  <p>Дякуємо, що завітали до нас! Будь ласка, оберіть дату та час для бронювання:</p>
+  <div id="timeslots">
+    <!-- Відображення вільних та заброньованих слотів -->
+  </div>
 
-    <div id="dialog-form" style="display: none;">
-        <h2>Форма бронювання</h2>
-        <p id="booking-info"></p>
-        <input type="text" id="name" placeholder="Ім'я">
-        <input type="text" id="phone" placeholder="Телефон">
-        <p>Якщо все вірно, введіть свій телефон та ім'я.</p>
-        <button id="confirm-booking">Підтвердити бронювання</button>
+  <div class="dialog-container">
+    <div class="dialog-content">
+      <span class="dialog-close">&times;</span>
+      <h2>Діалогове вікно</h2>
+      <p>Це приклад діалогового вікна.</p>
     </div>
-
-    <script src="main.js"></script>
+  </div>
+  
+  <script src="main.js"></script>
 </body>
 </html>
