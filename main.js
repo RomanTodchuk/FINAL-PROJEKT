@@ -62,8 +62,14 @@ function selectTimeslot(event) {
     selectedSlot.classList.remove('selected');
   }
   event.target.classList.add('selected');
+  openDialog();
+  const selectedCell = document.querySelector('.selected-cell');
+selectedCell.addEventListener('click', selectTimeslot);
 }
-
+// Створення функції, яка відображає діалогове вікно
+function openDialog() {
+  document.querySelector('.dialog-container').style.display = 'block';
+}
 
 
 /* подія , що викликає діалогове вікно */
